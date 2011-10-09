@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>script.aculo.us</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="imagetoolbar" content="false">
+<link rel="icon" href="scriptaculous_files/favicon.ico" type="image/x-icon" />
+<link href="scriptaculous_files/scriptaculous.css" media="screen" rel="Stylesheet" type="text/css">
+<script src="scriptaculous_files/prototype.js" type="text/javascript"></script>
+<script src="scriptaculous_files/scriptaculous.js" type="text/javascript"></script>
+</head>
+<body>
+  
+<div style="top: 0px; left: 30px;" id="header">
+<a href="http://script.aculo.us"><img id="logo" src="scriptaculous_logo.png" alt="script.aculo.us" style="display: block;" /></a>
+</div>
+  
+<div id="content">
+  
+<noscript>
+<div style="color:#fff;text-align:center;width:100%;position:absolute;top:200px">
+You really, really need to enable JavaScript to view this page.<br/>
+You know, it's about JavaScript.<br/>
+<br/>
+And it will make your life much easier, but it's up to you.
+</div>
+</noscript>
+  
+<div id="bg1-bubble" class="bubble" style="display: block; left: 50px; top: 100px; opacity: 0.999999; font-size: 13px; width: 350px; height: 350px;">
+	<img class="shot" src="scriptaculous_files/shot3.png" alt="">
+</div>
+<div id="bg2-bubble" class="bubble" style="display: block; left: 330px; top: 200px; opacity: 0.999999; font-size: 13px; width: 400px; height: 400px;">
+	<img class="shot" src="scriptaculous_files/shot3.png" alt="">
+</div>
+<div id="bg3-bubble" class="bubble" style="display: block; left: 580px; top: 150px; opacity: 0.999999; font-size: 13px; width: 350px; height: 350px;">
+<img class="shot" src="scriptaculous_files/shot3.png" alt="">
+	<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> 
+	<h1><a href="http://contact.jakewendt.com">contact</a></h1>
+</div>
+<div id="bg4-bubble" class="bubble" style="display: block; left:  80px; top: 400px; opacity: 0.999999; font-size: 13px; width: 150px; height: 150px;">
+	<img class="shot" src="scriptaculous_files/shot3.png" alt="">
+</div>
+
+<div id="effects-bubble" class="bubble" style="display: block; left: 290px; top: 220px; opacity: 0.999999; font-size: 13px; width: 310px; height: 310px;">
+	<img class="shot" src="scriptaculous_files/shot3.png" alt="">
+	<br />
+	<h1 id="effects-bubble-handle"><a href="effects.html">more effects</a></h1>
+	<p>Pulsing Lists</p>
+	<p>Flicker, Pixelate, Gradient</p>
+	<p>Curtain Open and Curtain Close (if-y)</p>
+	<p>Slide In and Out, Up Down, Left or Right</p>
+</div>
+  
+<div id="thanx-bubble" class="bubble" style="display: block; left: 490px; top: 80px; opacity: 0.999999; font-size: 13px; width: 290px; height: 290px;">
+	<img class="shot" src="scriptaculous_files/shot3.png" alt="">
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>this site is in no way</p>
+	<p>affiliated with script.aculo.us</p>
+	<h1>thanx</h1>
+	<h1 style="margin-top: 0px">guys</h1>
+</div>
+  
+</div><!-- content -->
+  
+  <script type="text/javascript">
+    // <![CDATA[
+      var Engine = {
+        detect: function() {
+          var UA = navigator.userAgent;
+          this.isKHTML = /Konqueror|Safari|KHTML/.test(UA);
+          this.isGecko = (/Gecko/.test(UA) && !this.isKHTML);
+          this.isOpera = /Opera/.test(UA);
+          this.isMSIE  = (/MSIE/.test(UA) && !this.isOpera);
+          this.isMSIE7 = this.isMSIE && !(/MSIE 6\./.test(UA) && !this.isOpera);
+        }
+      }
+      Engine.detect();
+      
+      // poor IE6 gets no shadows, ha!
+      if(Engine.isMSIE && !Engine.isMSIE7) {
+        $('logo').src = 'scriptaculous_files/scriptaculous_logo.gif';
+        $$('.shot').each(function(s){
+          s.src = 'shot.gif';
+        });
+      } else {
+        $('logo').src = 'scriptaculous_files/scriptaculous_logo.png';
+      }
+      
+      $('header').setStyle({top:'170px',left:'-700px'});
+      $('logo').setStyle({display:'block'});
+      
+      new Effect.Move('header',{ x: 730, y: -170, duration: 3 });
+    
+      function bubble(id,x,y){
+        $(id+'-bubble').setStyle({left:x+'px',top:y+'px'});
+        new Effect.Scale(id+'-bubble',100, Object.extend({
+          beforeStart:function(effect){
+            $(effect.element).style.display = 'block';
+            $(effect.element).setOpacity(0);
+            $$('#'+id+'-bubble p').each(function(p){p.hide()});
+          },
+          afterUpdate:function(effect){
+            $(effect.element).setOpacity(effect.position);
+          },
+          scaleFrom:0,
+          scaleFromCenter:true,
+          afterFinish:function(effect){
+            $$('#'+id+'-bubble p').each(function(p){
+              new Effect.Appear(p,{duration:0.4});
+            });
+          }
+        }, arguments[3] || {}));        
+      }
+      
+      bubble('bg1',      50,100, { delay:0.2, duration:1.0 });
+      bubble('bg2',     330,200, { delay:0.3, duration:1.0 });
+      bubble('bg3',     580,150, { delay:0.4, duration:1.0 });
+      bubble('bg4',      80,400, { delay:0.5, duration:1.0 });
+      bubble('effects', 210,200, { delay:0.8, duration:1.5 });
+      bubble('thanx',   480, 80, { delay:1.0, duration:1.5 });
+      
+    // ]]>
+  </script>
+  
+</body>
+</html>

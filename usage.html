@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scriptaculous Effects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="stikipad">
+
+<link rel="icon" href="scriptaculous_files/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="scriptaculous_files/script.aculo.us.css" type="text/css" media="screen">  
+<link rel="stylesheet" href="scriptaculous_files/application.css" type="text/css" media="screen">  
+<link rel="stylesheet" href="scriptaculous_files/jw.css" type="text/css" media="screen">  
+
+<link rel="icon" href="http://script.aculo.us/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div id="header">
+<a href="http://script.aculo.us/">
+<img id="logo" src="scriptaculous_files/logo.gif" alt="script.aculo.us - wiki">
+</a>
+</div>
+
+
+<div id="content">
+<h1 id="pageName">my Effects Usage</h1>
+<div id="effectsoptions">
+
+<h2 style="text-transform: none">Gradient (name subject to change) (August 2007)</h2>
+<p>This effect creates a table with 'rows' rows, 'cols' columns and a gradient of background color based on [colors].</p>
+<p>REQUIRES: <a href="scriptaculous_files/jw_color.js">jw_color.js</a> for gradient color calculations.</p>
+<p>NOTE: If you create a table with a large number of rows and columns, it may take a many seconds to finish creating the table.</p>
+<ul>
+	<li>rows: number of rows in the overlaying table</li>
+	<li>cols: number of columns in the overlaying table</li>
+	<li>type: diagonal, horizontal or vertical</li>
+	<li>colors: [ ] background-color of the cells in the table</li>
+	<li> . . . . . . . . [ top, bottom ]</li>
+	<li> . . . . . . . . [ left, right ]</li>
+	<li> . . . . . . . . [ top left, top right, bottom left, bottom right ]</li>
+	<li></li>
+	<li>Possible changes/additions</li>
+	<li>transition: linear-rgb is the default, but other algorithms could be devised</li>
+</ul>
+
+<p>Expected issues:</p>
+<ul>
+	<li>Creation of a table with more rows and/or columns than the element has pixels will probably cause a problem.</li>
+	<li></li>
+</ul>
+
+
+<h2 style="text-transform: none">Pixelate (name subject to change) (July 2007)</h2>
+<p>This effect creates a table with 'rows' rows, 'cols' columns and background color of 'startcolor' over the target.  It then randomly fills in these cells with a background color of 'endcolor'.</p>
+<p>NOTE: If you create a table with a large number of rows and columns, it may take a few seconds to finish creating the table which will delay the starting of the effect.</p>
+<ul>
+	<li>rows: number of rows in the overlaying table</li>
+	<li>cols: number of columns in the overlaying table</li>
+	<li>startcolor: initial background-color of the cells in the overlaying table</li>
+	<li>endcolor: background-color of the cells in the overlaying table</li>
+</ul>
+
+<h2 style="text-transform: none">PulseList (July 2007)</h2>
+<p>This effect sends an opacity pulse down or up the items of the list.  The duration is the duration for a single item to change and return to its original opacity.  If bounce is set to true, the direction changes at the end of each cycle.  If continuous is set to true, the pulsing never stops.</p>
+<ul>
+	<li>bounce : true or false</li>
+	<li>continuous : true or false</li>
+	<li>direction : 'up' or 'down'</li>
+	<li>duration : duration in sec of single pulse</li>
+	<li>min_opacity : minimum opacity of fade (effectively 'from')</li>
+	<li>pulses : the number of total pulses (ignored if continuous: true)</li>
+</ul>
+
+
+<h2 style="text-transform: none">Flicker (July 2007)</h2>
+<p>This effect randomly chooses a number between 0 and 1 at each update and if the number is below the 'threshold', the visibility is set to 'hidden' otherwise it is set to 'visible'.  When the effect is finished, the visibility is set to 'endvisibility' or 'visibile'.</p>
+<ul>
+	<li>endvisibility : 'visible' or 'hidden'</li>
+	<li>fps : effectively the number of "checks"</li>
+	<li>threshold : 0 to 1 (lower = more time off, higher = more time on)</li>
+</ul>
+
+
+<h2 style="text-transform: none">CurtainOpen and CurtainClose (June 2007)</h2>
+<p>These effects have no special options, but I have been having problems getting them work cleanly.</p>
+
+<h2 style="text-transform: none">SlideLeftIn, SlideLeftOut (June 2007)</h2>
+<p>These effects have no special options.</p>
+
+
+<h2 style="text-transform: none">SlideRightIn, SlideRightOut (June 2007)</h2>
+<p>These effects have no special options.</p>
+
+
+<h2 style="text-transform: none">SlideUpIn, SlideUpOut (June 2007)</h2>
+<p>These effects have no special options.</p>
+
+
+<h2 style="text-transform: none">SlideDownIn, SlideDownOut (June 2007)</h2>
+<p>These effects have no special options.</p>
+
+
+</div><!-- effectsoptions -->
+</div><!-- content -->
+
+</body></html>

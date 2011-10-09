@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scriptaculous Effects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="stikipad">
+
+<link rel="icon" href="scriptaculous_files/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="scriptaculous_files/script.css" type="text/css" media="screen">  
+<link rel="stylesheet" href="scriptaculous_files/application.css" type="text/css" media="screen">  
+<link rel="stylesheet" href="scriptaculous_files/jw.css" type="text/css" media="screen">  
+
+<script src="scriptaculous_files/global.js" type="text/javascript"></script>
+<script src="scriptaculous_files/prototype.js" type="text/javascript"></script>
+<script src="scriptaculous_files/scriptaculous.js" type="text/javascript"></script>
+<script src="scriptaculous_files/tc_effects.js" type="text/javascript"></script>
+<script src="scriptaculous_files/jw_effects.js" type="text/javascript"></script>
+		
+<link rel="icon" href="http://script.aculo.us/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div id="header">
+<a href="http://script.aculo.us/">
+<img id="logo" src="scriptaculous_files/logo.gif" alt="script.aculo.us - wiki">
+</a>
+</div>
+
+
+
+<div id="content">
+
+<h1 class="pageName">
+<a href="demoall.html">Full Effects Demo</a>
+</h1>
+
+<h1 class="pageName">
+<a href="scriptaculous_files/jw_effects.js">My Effects Demos</a>
+(<a href="usage.html">usage</a>)
+</h1>
+<div class="demo">
+
+<div class="c" style="height: 250px">
+<div class="example" id="demo-effect-space1" style="height: 250px">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<ul id='demo-effect-pulselistdown' onclick="new Effect.PulseList(this, { pulses: 5, direction: 'down' } )">
+	<li>Click</li>
+	<li>for</li>
+	<li>Pulse</li>
+	<li>List</li>
+	<li>Down</li>
+	<li>Effect</li>
+	<li>demo</li>
+</ul>
+</div>
+</div>
+
+<div class="c" style="height: 250px">
+<div class="example" id="demo-effect-space1" style="height: 250px">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<ul id='demo-effect-pulselistup' onclick="new Effect.PulseList(this, { pulses: 5, direction: 'up' } )">
+	<li>Click</li>
+	<li>for</li>
+	<li>Pulse</li>
+	<li>List</li>
+	<li>Up</li>
+	<li>Effect</li>
+	<li>demo</li>
+</ul>
+</div>
+</div>
+
+<div class="c" style="width: 380px">
+<div class="example" id="demo-effect-space1" style="width: 380px">
+<img src="scriptaculous_files/demo-logo.gif" style="height: 23px" alt="">
+<ul id='demo-effect-pulselistleft' onclick="new Effect.PulseList(this, { pulses: 5, direction: 'up' } )">
+	<li>Click</li>
+	<li>for</li>
+	<li>Pulse</li>
+	<li>List</li>
+	<li>Left</li>
+	<li>Effect</li>
+	<li>demo</li>
+</ul>
+<ul id='demo-effect-pulselistright' onclick="new Effect.PulseList(this, { pulses: 5, direction: 'down' } )">
+	<li>Click</li>
+	<li>for</li>
+	<li>Pulse</li>
+	<li>List</li>
+	<li>Right</li>
+	<li>Effect</li>
+	<li>demo</li>
+</ul>
+<ul id='demo-effect-pulselistbounce' onclick="new Effect.PulseList(this, { pulses: 6, direction: 'down', bounce: true, continuous: false } )">
+	<li>Click</li>
+	<li>for</li>
+	<li>Pulse</li>
+	<li>List</li>
+	<li>Bounce</li>
+	<li>Effect</li>
+	<li>demo</li>
+</ul>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-flicker" onclick="new Effect.Flicker(this, {fps: 10, duration: 5, threshold: 0.3, endvisibility: 'visible'})">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.Flicker<br />demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-sliderightin" onclick="new Effect.SlideRightIn(this)">
+<div style="width: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.SlideRightIn<br />demo</span>
+</div>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-sliderightout" onclick="new Effect.SlideRightOut(this); window.setTimeout('Effect.Appear(\'demo-effect-sliderightout\', {duration:.3})',2500);">
+<div style="width: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.SlideRightOut<br />demo</span>
+</div>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-slideleftin" onclick="new Effect.SlideLeftIn(this)">
+<div style="width: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.SlideLeftIn<br />demo</span>
+</div>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-slideleftout" onclick="new Effect.SlideLeftOut(this); window.setTimeout('Effect.Appear(\'demo-effect-slideleftout\', {duration:.3})',2500);">
+<div style="width: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.SlideLeftOut<br />demo</span>
+</div>
+</div>
+</div>
+
+
+
+<div class="c">
+<div class="example" id="demo-effect-slidedownin" onclick="new Effect.SlideDownIn(this)">
+<div style="height: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.SlideDownIn<br />demo<br />(~SlideDown)</span>
+</div> </div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-slidedownout" onclick="new Effect.SlideDownOut(this); window.setTimeout('Effect.Appear(\'demo-effect-slidedownout\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.SlideDownOut<br />demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-slideupin" onclick="new Effect.SlideUpIn(this)">
+<div style="height: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.SlideUpIn<br />demo</span>
+</div> </div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-slideupout" onclick="new Effect.SlideUpOut(this); window.setTimeout('Effect.Appear(\'demo-effect-slideupout\', {duration:.3})',2500);">
+<div style="height: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.SlideUpOut<br />demo<br />(~SlideUp)</span>
+</div>
+</div>
+</div>
+
+
+<div class="c">
+<div class="example" id="demo-effect-curtainopen" onclick="new Effect.CurtainOpen(this); window.setTimeout('Effect.Appear(\'demo-effect-curtainopen\', {duration:.3})',2500);">
+<div style="height: 120px; width: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.CurtainOpen<br />demo (buggy!)</span>
+</div>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-curtainclose" onclick="new Effect.CurtainClose(this)">
+<div style="height: 120px; width: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for<br />Effect.CurtainClose<br />demo (buggy!)</span>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+<!-- ################################################# -->
+
+
+<h1 class="pageName"><a href="scriptaculous_files/tc_effects.js">Effects Treasure Chest Demos</a></h1>
+<div class="demo">
+
+<div class="c">
+<div class="example" id="demo-effect-unfold" onclick="Element.hide('demo-effect-unfold'); new Effect.Unfold(this)">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Unfold demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-bounce" onclick="new Effect.Bounce(this)">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Bounce demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-center" onclick="new Effect.Center(this); window.setTimeout('Effect.Appear(\'demo-effect-center\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Center demo (BROKEN?)</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-dropin" onclick="Element.hide('demo-effect-dropin'); new Effect.DropIn(this);">
+<div style="height: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.DropIn demo (BROKEN?)</span>
+</div>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-shake-vertical" onclick="new Effect.ShakeVertical(this)">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.ShakeVertical demo</span>
+</div>
+</div>
+
+
+</div>
+
+
+<!-- ################################################# -->
+
+<h1 class="pageName"> Original Effects Demos   </h1>
+<div class="demo">
+
+<div class="c">
+<div class="example" id="demo-effect-appear" onclick="Element.hide('demo-effect-appear'); new Effect.Appear('demo-effect-appear');">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Appear demo</span>
+</div>  
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-fade" onclick="new Effect.Fade(this); window.setTimeout('Effect.Appear(\'demo-effect-fade\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Fade demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-puff" onclick="new Effect.Puff(this); window.setTimeout('Effect.Appear(\'demo-effect-puff\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Puff demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-blinddown" onclick="new Effect.BlindDown(this)">
+<div style="height: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.BlindDown demo</span>
+</div>
+</div>
+</div>
+
+ <div class="c">
+<div class="example" id="demo-effect-blindup" onclick="new Effect.BlindUp(this); window.setTimeout('Effect.Appear(\'demo-effect-blindup\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.BlindUp demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-switchoff" onclick="new Effect.SwitchOff(this); window.setTimeout('Effect.Appear(\'demo-effect-switchoff\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.SwitchOff demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-slidedown" onclick="new Effect.SlideDown(this)"><div style="height: 120px;">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.SlideDown demo</span>
+</div> </div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-slideup" onclick="new Effect.SlideUp(this); window.setTimeout('Effect.Appear(\'demo-effect-slideup\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.SlideUp demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-dropout" onclick="new Effect.DropOut(this);window.setTimeout('Effect.Appear(\'demo-effect-dropout\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.DropOut demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-shake" onclick="new Effect.Shake(this)">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Shake demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-pulsate" onclick="new Effect.Pulsate(this)">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Pulsate demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-squish" onclick="new Effect.Squish(this); window.setTimeout('Effect.Appear(\'demo-effect-squish\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Squish demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-fold" onclick="new Effect.Fold(this); window.setTimeout('Effect.Appear(\'demo-effect-fold\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Fold demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-grow" onclick="new Effect.Grow(this)">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Grow demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-shrink" onclick="new Effect.Shrink(this); window.setTimeout('Effect.Appear(\'demo-effect-shrink\', {duration:.3})',2500);">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Shrink demo</span>
+</div>
+</div>
+
+<div class="c">
+<div class="example" id="demo-effect-highlight" onclick="new Effect.Highlight(this)">
+<img src="scriptaculous_files/demo-logo.gif" alt="">
+<span>Click for Effect.Highlight demo</span>
+</div>
+</div>
+
+</div><!-- demo -->
+</div><!-- content -->
+
+
+
+</body></html>

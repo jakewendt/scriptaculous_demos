@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scriptaculous Effects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="scriptaculous_files/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="scriptaculous_files/script.css" type="text/css" media="screen">  
+<link rel="stylesheet" href="scriptaculous_files/application.css" type="text/css" media="screen">  
+<link rel="stylesheet" href="scriptaculous_files/jw.css" type="text/css" media="screen">  
+<script src="scriptaculous_files/global.js" type="text/javascript"></script>
+<script src="scriptaculous_files/prototype.js" type="text/javascript"></script>
+<script src="scriptaculous_files/scriptaculous.js" type="text/javascript"></script>
+<script src="scriptaculous_files/tc_effects.js" type="text/javascript"></script>
+<script src="scriptaculous_files/jw_effects.js" type="text/javascript"></script>
+<script src="scriptaculous_files/jw_color.js" type="text/javascript"></script>
+<link rel="icon" href="http://script.aculo.us/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div id="header">
+<a href="http://script.aculo.us/">
+<img id="logo" src="scriptaculous_files/logo.gif" alt="script.aculo.us - wiki">
+</a>
+</div>
+
+<div id="content">
+
+<div id='demo-menu'>
+
+	<h2 class="pageName">
+	<a href="demoall.html">Full Effects Demo</a>
+	</h2>
+
+	<h2 class="pageName">
+	<a href="scriptaculous_files/jw_effects.js">My Effects Demos</a>
+	(<a href="usage.html">usage</a>)
+	</h2>
+	<ul>
+		<li><a href="#" onclick="new Effect.Gradient('demo-effect',{rows: 25, cols: 25, colors: ['red', 'blue', 'green', 'white'], queue: 'end' });">Gradient (diagonal)</a></li>
+		<li><a href="#" onclick="new Effect.Gradient('demo-effect',{rows: 1, cols: 25, type: 'horizontal', queue: 'end' });">Gradient (horizontal)</a></li>
+		<li><a href="#" onclick="new Effect.Gradient('demo-effect',{rows: 25, cols: 1, type: 'vertical', queue: 'end' });">Gradient (vertical)</a></li>
+
+		<li><a href="#" onclick="new Effect.Pixelate('demo-effect',{rows: 10, cols: 10, startcolor: 'transparent', endcolor: 'black', queue: 'end' });">Pixelate(name change?)</a></li>
+		<li><a href="#" onclick="new Effect.Duplicate('demo-effect', { queue: 'end' })">Duplicate (ignore)</a></li>
+		<li><a href="#" onclick="new Effect.PulseList('demo-effect-list', { pulses: 5, direction: 'down', queue: 'end' } )">Pulse List Down</a></li>
+		<li><a href="#" onclick="new Effect.PulseList('demo-effect-list', { pulses: 5, direction: 'up', queue: 'end' } )">Pulse List Up</a></li>
+		<li><a href="#" onclick="new Effect.PulseList('demo-effect-list', { pulses: 5, direction: 'down', bounce: true, queue: 'end' } )">Pulse List Bounce</a></li>
+		<li><a href="#" onclick="new Effect.Flicker('demo-effect', {fps: 10, duration: 5, threshold: 0.3, endvisibility: 'visible', queue: 'end'})">Flicker</a></li>
+		<li><a href="#" onclick="new Effect.CurtainOpen('demo-effect', {duration: 4, queue: 'end'}); window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',4500);">Curtain Open (buggy!)</a></li>
+		<li><a href="#" onclick="new Effect.CurtainClose('demo-effect', {duration: 4, queue: 'end'});">Curtain Close (buggy!)</a></li>
+		<li><a href="#" onclick="new Effect.SlideRightIn('demo-effect', {duration: 2, queue: 'end'});">Slide Right In</a></li>
+		<li><a href="#" onclick="new Effect.SlideLeftIn('demo-effect', {duration: 2, queue: 'end'});">Slide Left In</a></li>
+		<li><a href="#" onclick="new Effect.SlideDownIn('demo-effect', {duration: 2, queue: 'end'});">Slide Down In</a></li>
+		<li><a href="#" onclick="new Effect.SlideUpIn('demo-effect', {duration: 2, queue: 'end'});">Slide Up In</a></li>
+		<li><a href="#" onclick="new Effect.SlideRightOut('demo-effect', {duration: 2, queue: 'end'}); window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Slide Right Out</a></li>
+		<li><a href="#" onclick="new Effect.SlideLeftOut('demo-effect', {duration: 2, queue: 'end'}); window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Slide Left Out</a></li>
+		<li><a href="#" onclick="new Effect.SlideDownOut('demo-effect', {duration: 2, queue: 'end'}); window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Slide Down Out</a></li>
+		<li><a href="#" onclick="new Effect.SlideUpOut('demo-effect', {duration: 2, queue: 'end'}); window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Slide Up Out</a></li>
+
+	</ul>
+
+
+<!-- ################################################# -->
+
+	<h2 class="pageName"><a href="scriptaculous_files/tc_effects.js">Effects Treasure Chest Demos</a></h2>
+	<ul>
+		<li><a href="#" onclick="Element.hide('demo-effect'); new Effect.Unfold('demo-effect', {duration: 2, queue: 'end'})">Unfold</a></li>
+		<li><a href="#" onclick="new Effect.Bounce('demo-effect', {duration: 2, queue: 'end'})">Bounce</a></li>
+		<li><a href="#" onclick="new Effect.Center('demo-effect', { queue: 'end' })">Center</a></li>
+		<li><a href="#" onclick="Element.hide('demo-effect'); new Effect.DropIn('demo-effect', {duration: 2, queue: 'end'})">Drop In (Broken?)</a></li>
+		<li><a href="#" onclick="new Effect.ShakeVertical('demo-effect', { queue: 'end' })">Shake Vertical</a></li>
+	</ul>
+<!-- ################################################# -->
+	<h2 class="pageName"> Original Effects Demos   </h2>
+	<ul>
+		<li><a href="#" onclick="Element.hide('demo-effect'); new Effect.Appear('demo-effect', { queue: 'end' });">Appear (Fade In)</a></li>
+		<li><a href="#" onclick="new Effect.Fade('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Fade Out</a></li>
+		<li><a href="#" onclick="new Effect.Puff('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Puff</a></li>
+		<li><a href="#" onclick="new Effect.BlindDown('demo-effect', { queue: 'end' });">Blind Down</a></li>
+		<li><a href="#" onclick="new Effect.BlindUp('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Blind Up</a></li>
+		<li><a href="#" onclick="new Effect.SwitchOff('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Switch Off</a></li>
+		<li><a href="#" onclick="new Effect.SlideDown('demo-effect', { queue: 'end' });">Slide Down</a></li>
+		<li><a href="#" onclick="new Effect.SlideUp('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Slide Up</a></li>
+		<li><a href="#" onclick="new Effect.DropOut('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Drop Out</a></li>
+		<li><a href="#" onclick="new Effect.Shake('demo-effect', { queue: 'end' });">Shake</a></li>
+		<li><a href="#" onclick="new Effect.Pulsate('demo-effect', { queue: 'end' });">Pulsate</a></li>
+		<li><a href="#" onclick="new Effect.Squish('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Squish</a></li>
+		<li><a href="#" onclick="new Effect.Fold('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Fold</a></li>
+		<li><a href="#" onclick="new Effect.Grow('demo-effect', { queue: 'end' });">Grow</a></li>
+		<li><a href="#" onclick="new Effect.Shrink('demo-effect', { queue: 'end' });window.setTimeout('Effect.Appear(\'demo-effect\', {duration:.3, queue: \'end\'})',2500);">Shrink</a></li>
+		<li><a href="#" onclick="new Effect.Highlight('demo-effect', { queue: 'end' });">Highlight</a></li>
+</div>
+
+<div id='effect-spaceholder'>
+	<div id='demo-effect' class='demo-effect'>
+		<div id='effect-content'>
+			<img src='scriptaculous_files/demo-logo.gif' alt='' />
+			<p>This is a triple layer'd div.  The outer layer is there as a spaceholder for when the second layer is not.  The second layer is the layer on which all* effects are directed.  The third layer holds all of the content.  All 3 layers are fixed at 500px by 500px.  Using this techinique seems to provide the best results.
+			<br />(* - list effects are directed at a "ul" inside the third layer; 
+				gradient and pixelate create a new element that is appended to the target's parent (outer layer))</p>
+			<ul id='demo-effect-list' style='float: left; width: 100px'>
+				<li>This</li>
+				<li>is</li>
+				<li>a</li>
+				<li>simple</li>
+				<li>list</li>
+				<li>to</li>
+				<li>test</li>
+				<li>the</li>
+				<li>Pulse</li>
+				<li>List</li>
+				<li>Effects</li>
+			</ul>
+			<p style='padding: 10px;'>Praesent, in, duis at tincidunt. Laoreet dolore elit amet feugiat dolore luptatum nisl ut ex eu minim quis. Nostrud quis, facilisis veniam vel nibh, sed vero eros consequat facilisi magna eros enim luptatum vel. Duis odio volutpat. Enim enim laoreet euismod et et facilisi autem ut et quis lobortis eu adipiscing. Dolore ad lobortis, quis dolore consequat qui quis dolor iriure vero hendrerit.</p>
+
+			<h1>These effects are free to use and are available for use under the same <a href="http://madrobby.github.com/scriptaculous/license/">scriptaculous license</a>.</h1>
+		</div>
+	</div>
+</div>
+
+
+
+</div><!-- content -->
+
+
+</body></html>

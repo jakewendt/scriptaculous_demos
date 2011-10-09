@@ -1,0 +1,79 @@
+ .altlink { cursor: pointer; }
+ .c {
+	cursor:pointer;
+	width:120px;
+	height:120px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+#content > h1 > a {
+	text-decoration: none;
+	background-color: transparent;
+}
+#content > h2 > a {
+	text-decoration: none;
+	background-color: transparent;
+}
+.example ul {
+	padding: 0;
+	text-align: center;
+}
+.example ul li {
+	font-size: 15pt;
+	list-style: none;
+	text-align: center;
+}
+.example #demo-effect-pulselistleft li,
+.example #demo-effect-pulselistright li,
+.example #demo-effect-pulselistbounce li {
+	font-size: 13pt;
+	display:inline;
+}
+#content {
+	margin-right:60px;
+}
+#effectsoptions {
+	margin-left:60px;
+	margin-right:60px;
+}
+/*
+	font-size:12px;
+	line-height:1.7;
+*/
+#content ul {
+	color:#444;
+}
+#demo-menu {
+   width: 200px;
+   height: 100%;
+   float: left;
+}
+#demo-menu > h2 > a {
+   text-decoration: none;
+   background-color: transparent;
+}
+#effect-spaceholder, 
+#effect-content, 
+.demo-effect {
+   height: 500px;
+   width: 500px;
+   float: left;
+}
+#effect-spaceholder {
+   margin-left: 20px;
+}
+.demo-effect {
+   background:url(demo.gif);
+   background-repeat: repeat; 
+}
+.demo-effect img {
+   width: 100%;
+   height: 46px;
+}
+.demo-effect ul li { 
+   font-size: 15pt;
+}
+li {
+   list-style: none;
+}
